@@ -109,7 +109,7 @@ public class Integer_Set {
 			if (set1.contains(set2.set.get(i)))
 				setA.add(set2.set.get(i));
 		return setA;
-	}
+	} 
 	/**
 	 * Finds the union of two sets which are all of the value in both sets.
 	 * @param intSetb (the integer set being compared to a set)
