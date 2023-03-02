@@ -136,7 +136,7 @@ public class Integer_Set {
 		for (int j = 0; j < set.size(); j++ )
 			if (!set.contains(intSetb.set.get(j)))
 				setC.add(intSetb.set.get(j));
-		return setC;	
+		return setC;	     
 	}
 	/**
 	 * Determines if a set is empty.
