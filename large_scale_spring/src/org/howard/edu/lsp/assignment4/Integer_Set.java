@@ -9,7 +9,7 @@ import java.util.List;
  * sets, the difference of two sets, or if a set is empty. The class also adds to a set, clears from a set, removes 
  * from a set, and converts the set to a string.
  * @author jennaijackson
- */
+ */ 
 public class Integer_Set {
 	private List<Integer> set;
 	/**

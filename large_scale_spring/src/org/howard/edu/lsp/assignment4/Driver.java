@@ -15,7 +15,7 @@ public class Driver {
 		System.out.println("Value of Set1 is " + set1);
 		set1.add(2);
 		set1.add(36);
-		set1.add(6);
+		set1.add(6); 
 		set1.add(13);
 		set1.add(24);
 		set1.add(2);

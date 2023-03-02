@@ -24,7 +24,7 @@ public class FileReader {
 					output = output + sc.nextLine() + " ";
 				}
 				return output.trim();
-			} finally {
+			} finally { 
 				sc.close();
 			}
 		}
