@@ -9,10 +9,10 @@ import java.util.List;
  * sets, the difference of two sets, or if a set is empty. The class also adds to a set, clears from a set, removes 
  * from a set, and converts the set to a string.
  * @author jennaijackson
- */ 
+ */  
 public class Integer_Set {
 	private List<Integer> set;
-	/**
+	/** 
 	 * Creates a list of integers under a variable: set.
 	 */
 	public Integer_Set() {
@@ -121,7 +121,7 @@ public class Integer_Set {
 			setB.add(intSetb.set.get(i));
 		for (int j = 0; j < intSetb.set.size(); j++)
 			setB.add(set.get(j));
-		return setB;
+		return setB; 
 	}
 	/**
 	 * Finds the difference of two sets which are the values that are in one set, but not in the other.

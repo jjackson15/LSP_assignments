@@ -23,7 +23,7 @@ public class FileReader {
 				while (sc.hasNextLine()) {
 					output = output + sc.nextLine() + " ";
 				}
-				return output.trim();
+				return output.trim(); 
 			} finally { 
 				sc.close();
 			}

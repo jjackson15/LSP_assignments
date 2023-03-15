@@ -13,4 +13,4 @@ public class IntegerSetException extends Exception {
 		super(message);
 	}
 }
-   
+    
