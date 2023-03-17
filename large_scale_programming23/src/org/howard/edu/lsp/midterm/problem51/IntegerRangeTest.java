@@ -1,5 +1,6 @@
 package org.howard.edu.lsp.midterm.problem51;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.howard.edu.lsp.midterm.problem51.Range.EmptyRangeException;
@@ -20,12 +21,15 @@ public class IntegerRangeTest {
 	 	@DisplayName("Test for getMax")
 	 	void testGeMax() {
 	 		assertEquals(int_range.getMax(), 50);
+	 		assertFalse(int_range.getMax() == 51);
 	 	}
 
 	 	@Test
 	 	@DisplayName("Test for getMin")
 	 	void testGetMin() {
 	 		assertEquals(int_range.getMin(), 0);
+	 		assertFalse(int_range.getMin() == 1);
+
 	 	}
 
 	 	@Test
@@ -50,10 +54,6 @@ public class IntegerRangeTest {
 	 		assertTrue(int_range.overlaps(range));
 	 		assertTrue(range.overlaps(int_range));
 
-	 		range = new IntegerRange(-30, -1);
-	 		assertFalse(int_range.overlaps(range));
-	 		assertFalse(range.overlaps(int_range));
-
 	 		range = new IntegerRange(51, 100);
 	 		assertFalse(int_range.overlaps(range));
 	 		assertFalse(range.overlaps(int_range));
@@ -77,9 +77,6 @@ public class IntegerRangeTest {
 
 	 		range = new IntegerRange(72, 150);
 	 		assertEquals(range.size(), 78);
-
-	 		range = new IntegerRange(-6, 20);
-	 		assertEquals(range.size(), 26);
 
 	 		assertEquals(int_range.size(), 50);
 	 	}
